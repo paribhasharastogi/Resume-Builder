@@ -15,3 +15,7 @@ Features:
 - Simple interface that helps you build quickly!
 - No sign-up needed — go straight to the building!
 - Your data never leaves your device
+
+## Running the environment locally or in Docker
+
+Run the environment locally or in Docker by following the instructions at [Running the environment](RUN_ENVIRONMENT.MD).
