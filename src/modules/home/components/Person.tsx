@@ -1,6 +1,6 @@
 import Image from 'next/image';
 
-const persons = [
+//const persons = [
   // {
   //   // name: 'Sadanand Pai',
   //   // role: 'Frontend Engineer',
@@ -29,7 +29,7 @@ const persons = [
   //   github: 'https://github.com/siva-kannan3',
   //   linkedin: 'https://www.linkedin.com/in/siva-kannan3/',
   // },
-];
+//];
 
 const PersonCard = ({ children }: { children: React.ReactNode }) => (
   <div className="transition ease-in-out delay-100 duration-300 px-6 py-8 flex flex-col items-center text-center shadow hover:shadow-xl rounded-xl border-2 border-resume-50 hover:border-resume-100">
@@ -48,23 +48,23 @@ const ProfileSocial = ({ github, linkedin }: { github: string; linkedin: string 
   </div>
 );
 
-export default function Person() {
-  return (
-    <>
-      {persons.map((person) => (
-        <PersonCard key={person.name}>
-          <Image
-            src={person.avatar}
-            alt={person.name}
-            className="rounded-full"
-            height="96"
-            width="96"
-          />
-          <p className="text-resume-800 mt-4 font-bold">{person.name}</p>
-          <p className="text-resume-400 mb-6">{person.role}</p>
-          <ProfileSocial github={person.github} linkedin={person.linkedin} />
-        </PersonCard>
-      ))}
-    </>
-  );
-}
+// export default function Person() {
+//   return (
+//     <>
+//       {persons.map((person) => (
+//         <PersonCard key={person.name}>
+//           <Image
+//             src={person.avatar}
+//             alt={person.name}
+//             className="rounded-full"
+//             height="96"
+//             width="96"
+//           />
+//           <p className="text-resume-800 mt-4 font-bold">{person.name}</p>
+//           <p className="text-resume-400 mb-6">{person.role}</p>
+//           <ProfileSocial github={person.github} linkedin={person.linkedin} />
+//         </PersonCard>
+//       ))}
+//     </>
+//   );
+// }
